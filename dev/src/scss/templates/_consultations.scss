@@ -1,0 +1,82 @@
+@use "includes/variables" as var;
+@use "includes/mixins" as mixin;
+
+.consultations_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50vw;
+  z-index: 1;
+  h2 {
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 42vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 50vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 55vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 60vw;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.images_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding-inline: 5vw;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    padding-inline: 2vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-inline: 0;
+    width: 120%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 135%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 160%;
+  }
+  @media screen and (max-width: 400px) {
+    width: 180%;
+  }
+  @media screen and (max-width: 350px) {
+    width: 190%;
+  }
+}
+
+.sphinks-img {
+  width: 200px;
+  height: 200px;
+}
+
+.right-img {
+  transform: scaleX(-1);
+}

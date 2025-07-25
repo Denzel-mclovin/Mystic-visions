@@ -1,0 +1,30 @@
+@use "includes/variables" as var;
+@use "includes/mixins" as mixin;
+
+.newsletter {
+  .block_content_wrapper {
+    .title_content {
+      align-items: end;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+  .link-element {
+    transform: translate(-1px, 1px);
+    z-index: 5;
+  }
+  .info_content {
+    align-items: end;
+
+    @media screen and (max-width: 768px) {
+      align-items: start;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .mobile_content {
+      justify-content: flex-end !important;
+    }
+  }
+}

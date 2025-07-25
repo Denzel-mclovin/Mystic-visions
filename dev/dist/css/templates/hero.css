@@ -1,0 +1,15 @@
+.hero {
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+.hero .conntainer {
+	height: 100%;
+}
+.hero .hero_content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}

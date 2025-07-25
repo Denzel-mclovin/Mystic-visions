@@ -1,0 +1,103 @@
+@use "includes/variables" as var;
+@use "includes/mixins" as mixin;
+
+.testimonials{
+    .image-wrapper{
+        position: relative;
+        margin-bottom: 50px;
+        img{
+          width: 100%;
+          height: 70vh !important;
+          object-fit: cover;
+        }
+        
+    }
+}
+
+
+.block-title{
+    width: fit-content;
+    min-width: 45%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    padding: 20px 15px 10px;
+  
+    bottom: 0;
+    left: 0;
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    
+    }
+    .after-title{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        font-weight: 500;
+        font-size: clamp(18px, 2.5vw, 42px);
+    }
+    span{
+        color: var.$title_color;
+        font-size: clamp(18px, 2.5vw, 42px);
+    }
+     svg{
+        border: 1px solid var.$btn_color;
+        border-radius: 50%;
+        fill: var.$btn_color;
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+      }
+      @media screen and (min-width: 1024px) {
+        &:hover{
+          background-color: var.$btn_color;
+          transition: all ease 0.3s;
+          h2{
+            color: white;
+
+          }
+          span{
+            color: white;
+          }
+          svg{
+            border: 1px solid white;
+            fill: white;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+        
+      }
+}
+
+.testimonials-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    gap: 2vw;
+    p{
+      flex: 1;
+    }
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+        
+    }
+
+    .author{
+      display: block;
+      text-align: end;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    
+}

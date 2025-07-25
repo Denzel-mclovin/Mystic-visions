@@ -1,0 +1,41 @@
+.apparel {
+  .link-element {
+    right: 0;
+    left: unset !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    .block_content_wrapper {
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .mobile_content {
+      justify-content: flex-end !important;
+      h2 {
+        text-align: justify;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .img_conntainer {
+      flex: 0 0 50% !important;
+    }
+    .info_content {
+      flex: 0 0 35% !important;
+
+      .block-description {
+        font-size: clamp(19px, 1.2vw, 24px);
+        margin: 0 auto;
+      }
+
+      a {
+        margin: 0 auto;
+
+        width: -webkit-fill-available;
+        white-space: nowrap;
+      }
+    }
+  }
+}
