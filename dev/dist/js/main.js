@@ -24,12 +24,46 @@ $(document).ready(function () {
     }
   });
 
-  $(".player_button").on("click", function () {
-    $(".player").toggleClass("active");
-    $(".video_container video").get(0).paused
-      ? $(".video_container video").get(0).play()
-      : $(".video_container video").get(0).pause();
+  // $(".player_button").on("click", function () {
+  //   $(".player").toggleClass("active");
+  //   $(".video_container video").get(0).paused
+  //     ? $(".video_container video").get(0).play()
+  //     : $(".video_container video").get(0).pause();
+  // });
+
+//   $(".player_button").on("click", function () {
+//   const video = $(".video_container video").get(0);
+
+//   $(".player").toggleClass("active");
+
+//   if (video.paused) {
+//     video.play();
+//   } else {
+//     video.pause();
+//   }
+// });
+
+const video = $(".video_container video").get(0);
+  const playerButton = $(".player_button");
+  const player = $(".player");
+
+  playerButton.on("click", function () {
+    if (video.paused || video.ended) {
+      video.play();
+      player.toggleClass("active");
+    } else {
+      video.pause();
+      player.toggleClass("active");
+    }
   });
+
+  $(video).on("ended", function () {
+    player.toggleClass("active");
+  });
+
+// $(".video_container video").on("ended", function () {
+//   $(".player").removeClass("active");
+// });
 
   $(".hero").css({
     height: `calc(100vh - ${headerHeight}px)`,
