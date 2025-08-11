@@ -6,7 +6,8 @@
 // @import 'includes/plugins';
 
 .header {
-  position: sticky;
+  // position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,8 +23,10 @@
   justify-content: center;
   align-items: center;
   gap: clamp(10px, 4vw, 80px);
-  background: #5a368b;
+  // background: #5a368b;
+  backdrop-filter: blur(7px);
   padding: 15px 0;
+  border-bottom: 1px solid #5a368b;
   @media screen and (max-width: 1024px) {
     & {
       padding: 10px 0;
@@ -81,7 +84,10 @@
 }
 
 .mobile-header {
-  background: #5a368b;
+  // background: #5a368b;
+  background: transparent;
+  border-bottom: 1px solid #5a368b;
+  backdrop-filter: blur(8px);
   position: relative;
   z-index: 2;
 }
@@ -91,7 +97,7 @@
   justify-content: space-between;
   align-items: center;
   padding-block: 15px;
-  background: #5a368b;
+  // background: #5a368b;
 }
 
 .burger_menu {

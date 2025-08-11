@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="color-scheme" content="light only">
     <title></title>
-	<link rel="preload" href="/fonts/SFProDisp.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<!-- <link rel="preload" href="/fonts/SFProDisp.woff2" as="font" type="font/woff2" crossorigin="anonymous" /> -->
+	 <link rel="preload" href="/assets/fonts/SFProDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
 	
 	<link rel="stylesheet" href="/css/all.css" />
 	<link
@@ -14,6 +16,7 @@
 		as="style"
 		onload="this.onload=null;this.rel='stylesheet'"
 	/>
+	<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
 	<noscript>
 		<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
 	</noscript>
@@ -268,12 +271,64 @@
 		    350 -941 543 -335 194 -616 354 -623 357 -11 4 -13 -188 -13 -1097z"/>
 		    </g>
 		  </symbol>
+		  <symbol id="rate-star-icon"  viewBox="0 -0.5 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+		
+		    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+		
+		    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+		
+		    <g id="SVGRepo_iconCarrier"> <g id="Vivid.JS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Vivid-Icons" transform="translate(-903.000000, -411.000000)" fill="#ffac33"> <g id="Icons" transform="translate(37.000000, 169.000000)"> <g id="star" transform="translate(858.000000, 234.000000)"> <g transform="translate(7.000000, 8.000000)" id="Shape"> <polygon points="27.865 31.83 17.615 26.209 7.462 32.009 9.553 20.362 0.99 12.335 12.532 10.758 17.394 0 22.436 10.672 34 12.047 25.574 20.22"> </polygon> </g> </g> </g> </g> </g> </g>
+		
+		  </symbol>
+		
+		  <symbol id="no-sound-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+		      viewBox="0 0 512.000000 512.000000"
+		      preserveAspectRatio="xMidYMid meet">
+		
+		      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+		      fill="#fff" stroke="none">
+		      <path d="M540 4668 c-65 -35 -103 -93 -108 -167 -8 -110 -20 -95 468 -586
+		      l447 -450 -18 -35 c-48 -95 -50 -127 -47 -890 l3 -715 24 -58 c44 -112 143
+		      -207 258 -250 56 -21 74 -22 483 -25 l425 -3 515 -514 c354 -354 527 -519 552
+		      -530 85 -35 184 -11 246 59 45 51 52 90 52 290 l0 180 263 -261 c286 -284 292
+		      -289 397 -281 67 5 120 36 159 94 30 43 39 133 21 190 -10 32 -360 387 -1949
+		      1977 -1065 1066 -1953 1950 -1975 1964 -56 40 -153 44 -216 11z"/>
+		      <path d="M3540 4674 c-22 -9 -224 -203 -550 -529 l-515 -514 -63 -3 -62 -3
+		      745 -745 745 -745 0 1185 c0 796 -4 1197 -11 1223 -13 49 -63 105 -114 128
+		      -48 22 -127 24 -175 3z"/>
+		      </g>
+		  </symbol>
+		
+		  <symbol id="volume-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+		    viewBox="0 0 512.000000 512.000000"
+		    preserveAspectRatio="xMidYMid meet">
+		    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+		    fill="#fff" stroke="none">
+		    <path d="M2846 4943 c-10 -3 -400 -310 -867 -684 l-849 -678 -442 -3 c-437 -3
+		    -444 -3 -489 -26 -74 -36 -125 -87 -161 -160 l-33 -67 0 -765 0 -765 33 -67
+		    c36 -73 87 -124 161 -160 45 -23 52 -23 489 -26 l442 -3 848 -678 c467 -373
+		    859 -681 873 -684 75 -20 156 12 194 77 l25 43 0 2263 0 2263 -25 43 c-38 65
+		    -121 97 -199 77z"/>
+		    <path d="M4249 4290 c-71 -21 -119 -87 -119 -165 0 -60 7 -72 104 -180 154
+		    -171 247 -307 337 -491 233 -478 270 -1026 103 -1533 -93 -282 -227 -509 -440
+		    -746 -97 -108 -104 -120 -104 -180 0 -115 101 -194 212 -165 34 9 60 29 120
+		    90 291 299 512 714 603 1135 165 764 -54 1558 -591 2134 -91 98 -149 124 -225
+		    101z"/>
+		    <path d="M3770 3807 c-77 -25 -120 -83 -120 -160 0 -62 16 -91 100 -183 225
+		    -248 342 -556 342 -904 0 -345 -115 -652 -338 -899 -89 -100 -104 -126 -104
+		    -186 0 -81 48 -144 125 -164 48 -12 102 -2 143 27 42 31 168 180 235 280 65
+		    95 151 268 190 377 72 203 107 483 88 698 -34 382 -165 695 -410 982 -107 126
+		    -170 159 -251 132z"/>
+		    </g>
+		  </symbol>
+		
+		
 		</svg>
 
     <div class="wrapper">
       <div class="header">
           <div class="header_inner">
-            <div class="link_block">
+            <!-- <div class="link_block">
               <a href="/#about" class="link-el">About</a>
 
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
@@ -282,23 +337,23 @@
 
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
               <a href="/#newsletter" class="link-el">Newsletter</a>
-            </div>
-            <img src="/images/header-logo.webp" alt="logo" class="logo" width="40" height="40"/>
-            <div class="link_block">
+            </div> -->
+            <img src="/images/sphinks.webp" alt="logo" class="logo" width="40" height="40"/>
+            <!-- <div class="link_block">
               <a href="/#apparel" class="link-el">Apparel</a>
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
               <a href="/#consulting" class="link-el">Consulting</a>
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
               <a href="/#contact" class="link-el">Contact</a>
-            </div>
+            </div> -->
           </div>
 		  <div class="mobile_header_inner">
 			<div class="mobile-header">
 				<div class="conntainer">
 					<div class="mobile_header_content">
-						<img src="/images/header-logo.webp" alt="logo" class="logo" width="40" height="40"/>
+						<img src="/images/sphinks.webp" alt="logo" class="logo" width="40" height="40"/>
 
-						<div class="burger_menu">
+						<!-- <div class="burger_menu">
 							<svg class="icon icon-active" id="burger-btn">
 								<use xlink:href="#burger-icon"></use>
 							</svg>
@@ -306,13 +361,13 @@
 								<use xlink:href="#close-icon"></use>
 							</svg>
 
-						</div>
+						</div> -->
 					</div>
 				
 
 				</div>
 			</div>
-			<div class="mobile_menu">
+			<!-- <div class="mobile_menu">
 				<ul>
 					<li data-target="/#book">
 					<img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img" />
@@ -339,7 +394,7 @@
 					<span>Contact</span>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 		  </div>
       </div>
       <div class="main">

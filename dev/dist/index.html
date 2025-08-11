@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="color-scheme" content="light only">
     <title>Mystic Visions</title>
-	<link rel="preload" href="/fonts/SFProDisp.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<!-- <link rel="preload" href="/fonts/SFProDisp.woff2" as="font" type="font/woff2" crossorigin="anonymous" /> -->
+	 <link rel="preload" href="/assets/fonts/SFProDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
 	
 	<link rel="stylesheet" href="/css/all.css" />
 	<link
@@ -14,6 +16,7 @@
 		as="style"
 		onload="this.onload=null;this.rel='stylesheet'"
 	/>
+	<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
 	<noscript>
 		<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
 	</noscript>
@@ -268,12 +271,64 @@
 		    350 -941 543 -335 194 -616 354 -623 357 -11 4 -13 -188 -13 -1097z"/>
 		    </g>
 		  </symbol>
+		  <symbol id="rate-star-icon"  viewBox="0 -0.5 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+		
+		    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+		
+		    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+		
+		    <g id="SVGRepo_iconCarrier"> <g id="Vivid.JS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Vivid-Icons" transform="translate(-903.000000, -411.000000)" fill="#ffac33"> <g id="Icons" transform="translate(37.000000, 169.000000)"> <g id="star" transform="translate(858.000000, 234.000000)"> <g transform="translate(7.000000, 8.000000)" id="Shape"> <polygon points="27.865 31.83 17.615 26.209 7.462 32.009 9.553 20.362 0.99 12.335 12.532 10.758 17.394 0 22.436 10.672 34 12.047 25.574 20.22"> </polygon> </g> </g> </g> </g> </g> </g>
+		
+		  </symbol>
+		
+		  <symbol id="no-sound-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+		      viewBox="0 0 512.000000 512.000000"
+		      preserveAspectRatio="xMidYMid meet">
+		
+		      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+		      fill="#fff" stroke="none">
+		      <path d="M540 4668 c-65 -35 -103 -93 -108 -167 -8 -110 -20 -95 468 -586
+		      l447 -450 -18 -35 c-48 -95 -50 -127 -47 -890 l3 -715 24 -58 c44 -112 143
+		      -207 258 -250 56 -21 74 -22 483 -25 l425 -3 515 -514 c354 -354 527 -519 552
+		      -530 85 -35 184 -11 246 59 45 51 52 90 52 290 l0 180 263 -261 c286 -284 292
+		      -289 397 -281 67 5 120 36 159 94 30 43 39 133 21 190 -10 32 -360 387 -1949
+		      1977 -1065 1066 -1953 1950 -1975 1964 -56 40 -153 44 -216 11z"/>
+		      <path d="M3540 4674 c-22 -9 -224 -203 -550 -529 l-515 -514 -63 -3 -62 -3
+		      745 -745 745 -745 0 1185 c0 796 -4 1197 -11 1223 -13 49 -63 105 -114 128
+		      -48 22 -127 24 -175 3z"/>
+		      </g>
+		  </symbol>
+		
+		  <symbol id="volume-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+		    viewBox="0 0 512.000000 512.000000"
+		    preserveAspectRatio="xMidYMid meet">
+		    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+		    fill="#fff" stroke="none">
+		    <path d="M2846 4943 c-10 -3 -400 -310 -867 -684 l-849 -678 -442 -3 c-437 -3
+		    -444 -3 -489 -26 -74 -36 -125 -87 -161 -160 l-33 -67 0 -765 0 -765 33 -67
+		    c36 -73 87 -124 161 -160 45 -23 52 -23 489 -26 l442 -3 848 -678 c467 -373
+		    859 -681 873 -684 75 -20 156 12 194 77 l25 43 0 2263 0 2263 -25 43 c-38 65
+		    -121 97 -199 77z"/>
+		    <path d="M4249 4290 c-71 -21 -119 -87 -119 -165 0 -60 7 -72 104 -180 154
+		    -171 247 -307 337 -491 233 -478 270 -1026 103 -1533 -93 -282 -227 -509 -440
+		    -746 -97 -108 -104 -120 -104 -180 0 -115 101 -194 212 -165 34 9 60 29 120
+		    90 291 299 512 714 603 1135 165 764 -54 1558 -591 2134 -91 98 -149 124 -225
+		    101z"/>
+		    <path d="M3770 3807 c-77 -25 -120 -83 -120 -160 0 -62 16 -91 100 -183 225
+		    -248 342 -556 342 -904 0 -345 -115 -652 -338 -899 -89 -100 -104 -126 -104
+		    -186 0 -81 48 -144 125 -164 48 -12 102 -2 143 27 42 31 168 180 235 280 65
+		    95 151 268 190 377 72 203 107 483 88 698 -34 382 -165 695 -410 982 -107 126
+		    -170 159 -251 132z"/>
+		    </g>
+		  </symbol>
+		
+		
 		</svg>
 
     <div class="wrapper">
       <div class="header">
           <div class="header_inner">
-            <div class="link_block">
+            <!-- <div class="link_block">
               <a href="/#about" class="link-el">About</a>
 
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
@@ -282,23 +337,23 @@
 
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
               <a href="/#newsletter" class="link-el">Newsletter</a>
-            </div>
-            <img src="/images/header-logo.webp" alt="logo" class="logo" width="40" height="40"/>
-            <div class="link_block">
+            </div> -->
+            <img src="/images/sphinks.webp" alt="logo" class="logo" width="40" height="40"/>
+            <!-- <div class="link_block">
               <a href="/#apparel" class="link-el">Apparel</a>
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
               <a href="/#consulting" class="link-el">Consulting</a>
               <img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img"/>
               <a href="/#contact" class="link-el">Contact</a>
-            </div>
+            </div> -->
           </div>
 		  <div class="mobile_header_inner">
 			<div class="mobile-header">
 				<div class="conntainer">
 					<div class="mobile_header_content">
-						<img src="/images/header-logo.webp" alt="logo" class="logo" width="40" height="40"/>
+						<img src="/images/sphinks.webp" alt="logo" class="logo" width="40" height="40"/>
 
-						<div class="burger_menu">
+						<!-- <div class="burger_menu">
 							<svg class="icon icon-active" id="burger-btn">
 								<use xlink:href="#burger-icon"></use>
 							</svg>
@@ -306,13 +361,13 @@
 								<use xlink:href="#close-icon"></use>
 							</svg>
 
-						</div>
+						</div> -->
 					</div>
 				
 
 				</div>
 			</div>
-			<div class="mobile_menu">
+			<!-- <div class="mobile_menu">
 				<ul>
 					<li data-target="/#book">
 					<img src="/images/header-star.webp" alt="star" width="59"  height="60" class="star-img" />
@@ -339,7 +394,7 @@
 					<span>Contact</span>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 		  </div>
       </div>
       <div class="main">
@@ -348,7 +403,7 @@
 </html>
 
 
-<section class="section hero">
+<!-- <section class="section hero">
     <div class="conntainer">
         <div class="hero_content">
    
@@ -376,7 +431,229 @@
   </h1>
 </div>
 
-</section><section class="book-promo section animate-content" id="about">
+</section> -->
+ <section class="section promo-hero">
+   <div class="container">
+     <div class="promo-hero-content">
+       <div class="left_column">
+         <div class="text_content">
+           <span
+             >Ready to get paid what you're worth, live where you're treated
+             best, and start living your best life?</span
+           >
+           <h1>Discover the strategies inside.</h1>
+           <p>
+             The Pillars of Wisdom provides a robust, practical guide to gaming
+             the job market, achieving location independence, and optimizing your
+             life for success.
+           </p>
+         </div>
+         <div class="media_content">
+             <video
+               id="promo-video"
+               class="video-js"
+               controls
+               preload="auto"
+               width="100%"
+               height="450px"
+               playsinline
+               preload="auto"
+               autoplay
+               muted
+               poster="./images/preview.webp"
+             >
+               <source src="./videos/hero-final-cropped.mp4" type="video/mp4" />
+               Your browser does not support the video tag.
+             </video>
+             <button class="sound_on_btn">
+               <div class="warning">
+                 <svg>
+                   <use xlink:href="#no-sound-icon"></use>
+                 </svg>
+                 <span clas="call-to-action">
+                   click to turn
+                   <br/>
+                   <span class="capitalize_text">
+                     on sound
+                   </span>
+                 </span>
+ 
+               </div>
+               <div class="sound_on">
+                 <svg class="icon">
+                   <use xlink:href="#volume-icon"></use>
+                 </svg>
+                 <span class="text">
+                   Enable sound
+                 </span>
+               </div>
+             </button>
+         </div>
+       </div>
+       <div class="right_column">
+         <img
+           data-sizes="auto"
+           data-srcset="
+                                         ./images/promo-book-480.webp 480w,
+                                         ./images/promo-book-768.webp 768w,
+                                         ./images/promo-book-1200.webp 1200w"
+           data-src="./images/promo-book-1200.webp"
+           class="lazyload"
+           width="1200"
+           height="800"
+           alt="book"
+           style="width: 100%; height: auto"
+         />
+         <div class="bottom_content">
+ 
+            <div class="rate_wrapper">
+           <div class="stars_content">
+             <svg class="icon">
+               <use xlink:href="#rate-star-icon"></use>
+             </svg>
+             <svg class="icon">
+               <use xlink:href="#rate-star-icon"></use>
+             </svg>
+             <svg class="icon">
+               <use xlink:href="#rate-star-icon"></use>
+             </svg>
+             <svg class="icon">
+               <use xlink:href="#rate-star-icon"></use>
+             </svg>
+             <svg class="icon">
+               <use xlink:href="#rate-star-icon"></use>
+             </svg>
+           </div>
+           <div class="rate_comment">5 - star on <span>Goodreads</span></div>
+         </div>
+         <a 
+           class="hero_btn"
+           href="https://shop.thepillarsofwisdom.com/cart/49305684803752:1"
+           target="_blank"
+         >
+           <h2>Secure Your Copy</h2>
+           <span> Exclusive Offer Awaits </span>
+         </a>
+ 
+         </div>
+        
+       </div>
+     </div>
+     <div class="promo_testimonials">
+       <!-- <li>
+         <img src="./images/user1.avif" alt="avatar">
+         <div class="testimonial">
+           <p>
+ 
+           </p>
+           <span>
+ 
+           </span>
+         </div>
+       </li> -->
+       <swiper-container
+         class="mySwiper"
+         pagination="true"
+         pagination-clickable="true"
+         space-between="30"
+         navigation="true"
+         navigation-prev-el=".swiper-button-prev"
+         navigation-next-el=".swiper-button-next"
+         breakpoints='{
+           "0": {
+             "slidesPerView": 1
+           },
+           "769": {
+             "slidesPerView": 2
+           }
+         }'
+       >
+         <swiper-slide>
+           <img src="./images/user1.avif" alt="avatar" />
+           <div class="slide_text">
+             <p>
+               I went from a directionless and anxious, 28-year-old man, to
+               someone with a proper plan of action in just a few short months. I
+               now have a newfound love for the gym from the tangible results of
+               this consulting. And my relationships, both professional and
+               personal, have been decoded and unobscured by all the
+               psychological insights I've gained. The Mystic Visions consulting
+               program is some of the best money I’ve ever spent, and the only
+               way is up for me here on out.
+             </p>
+             <span class="author"> Anthony M </span>
+           </div>
+         </swiper-slide>
+         <swiper-slide>
+           <img src="./images/user2.avif" alt="avatar" />
+           <div class="slide_text">
+             <p>
+               I don’t really look at myself the same way as before I started the
+               consulting. I would highly recommend it for those who are
+               struggling with obstacles that keep them from moving forward.
+               During consulting, there has never been a time where I presented a
+               problem and it wasn’t met with a solution. Also, the mindset that
+               I have developed throughout the coaching process is like my
+               improved physique which is a result of the workout programs and a
+               personally tailored diet plan. The most interesting part of the
+               consulting is the discussion of theory, because not only will my
+               understanding increase but I'll be given practical examples to
+               help me further my understanding, and to be able to apply
+               everything immediately.
+             </p>
+             <span class="author"> Liam S </span>
+           </div>
+         </swiper-slide>
+         <swiper-slide>
+           <img src="./images/user1.avif" alt="avatar" />
+           <div class="slide_text">
+             <p>
+               Pillars presents a robust study in how to make it in life, replete
+               with résumé tips, fitness and supplement information, sex magick,
+               and yes, political commentary. Despite defining concepts like the
+               Goofy Shmoofy Cycle, Pillars isn’t confined to high level
+               academics and taxonomies quick to fly over normies’ heads.
+             </p>
+             <span class="author"> Ancient Problemz </span>
+           </div>
+         </swiper-slide>
+         <swiper-slide>
+           <img src="./images/user2.avif" alt="avatar" />
+           <div class="slide_text">
+             <p>
+               GLO’s prose is lively and engaging, his practical advice useful
+               and actionable, and his broader narrative sophisticated and
+               compelling. This isn’t the tepid grainy Denny’s coffee you usually
+               get with Manosphere books. … Pillars deserves your eyeballs for
+               that reason alone—it will prove incredibly useful to anyone
+               interested in writing for an audience of young men in 2025.
+             </p>
+             <span class="author"> Walt Bismarck </span>
+           </div>
+         </swiper-slide>
+         <swiper-slide>
+           <img src="./images/user1.avif" alt="avatar" />
+           <div class="slide_text">
+             <p>
+               It’s easy to see this book as primarily removing pillars of folly,
+               like blind Samson in the enemy temple. The Pillars of Wisdom left
+               a different impression. It was brutal. This book is about what we
+               cannot save. It's not a call to arms, it is Aeneas fleeing Troy. …
+               It also brings full circle more than ten years of reactionary
+               gender wars. The manosphere has become a stagnant, fossilized
+               place. One where stoicism conceals passivity. Stoicism is the
+               posture of the conquered man, who watches Rome burn without
+               breaking frame. A man doesn't need one redpill, one revolution,
+               but perpetual revolution."P
+             </p>
+             <span class="author"> Rach </span>
+           </div>
+         </swiper-slide>
+       </swiper-container>
+     </div>
+   </div>
+ </section>
+<!-- <section class="book-promo section animate-content" id="about">
   <div class="conntainer">
     <div class="block_content_wrapper">
       <div class="video_container">
@@ -426,7 +703,8 @@
     </div>
   </div>
 </section>
-<section class="newsletter section animate-content" id="book">
+ -->
+<!-- <section class="newsletter section animate-content" id="book">
   <div class="conntainer">
     <div class="block_content_wrapper">
       <div class="info_content">
@@ -537,7 +815,8 @@
     </div>
   </div>
 </section>
-<section class="apparel section animate-content" id="apparel">
+ -->
+<!-- <section class="apparel section animate-content" id="apparel">
   <div class="conntainer">
     <div class="block_content_wrapper">
       <div class="img_conntainer">
@@ -599,7 +878,8 @@
     </div>
   </div>
 </section>
-<section class="coaching section animate-content" id="consulting">
+ -->
+<!-- <section class="coaching section animate-content" id="consulting">
   <div class="coaching_images">
     <img
       src="./images/filled-figure.webp"
@@ -715,7 +995,8 @@
     </div>
   </div>
 </section>
-<section class="section testimonials">
+ -->
+<!-- <section class="section testimonials">
   <div class="conntainer">
     <div class="image-wrapper">
       <img
@@ -731,12 +1012,6 @@
         alt="hero"
         style="width: 100%; height: auto"
       />
-
-      <!-- data-srcset="
-                    ./images/testimonials-480.webp 480w,
-                    ./images/testimonials-768.webp 768w,
-                    ./images/testimonials-1200.webp 1200w"
-        data-src="./images/testimonials-1200.webp" -->
 
       <div class="block-title">
         <h2>Testimonials</h2>
@@ -839,15 +1114,12 @@
         </swiper-slide>
       </swiper-container>
 
-      <!-- <div class="swiper-navigation">
-        <button class="swiper-button-prev">←</button>
-        <button class="swiper-button-next">→</button>
-      </div>
-       -->
+  
     </div>
   </div>
 </section>
-<section class="section quote">
+ -->
+<!-- <section class="section quote">
   <div class="quote_content">
     <div class="quote_text">
       <div class="line">
@@ -877,7 +1149,8 @@
     </div>
   </div>
 </section>
-<section class="section consultations ">
+ -->
+<!-- <section class="section consultations ">
   <div class="consultations_content">
     <div class="images_content">
       <img
@@ -911,9 +1184,11 @@
     </div>
   </div>
 </section>
-<section class="section substack" id="newsletter">
+ -->
+<!-- <section class="section substack" id="newsletter">
     <div data-supascribe-embed-id="395643912758" data-supascribe-feed=""></div>
-</section>
+</section> -->
+
 		</div>
 		<div class="footer" id="contact">
 			<div class="footer-divider">
@@ -921,7 +1196,7 @@
 			</div>
 			<div class="footer-bg">
 				<div class="footer-content">
-					<img src="/images/footer-logo.webp" alt="logo" class="footer-logo">
+					<img src="/images/sphinks.webp" alt="logo" class="footer-logo">
 					<div class="contacts">
 						<div class="contact">
 							<svg class="svg-icon"> 
@@ -988,6 +1263,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 	<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+	<!-- <script src="video.min.js"></script> -->
+	 <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 	<script src="/js/main.js" defer></script>
 </body>
 </html>

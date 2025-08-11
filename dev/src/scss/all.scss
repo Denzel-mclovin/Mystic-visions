@@ -17,6 +17,7 @@
 @use "templates/consultations";
 
 @use "templates/hero";
+@use "templates/promo-hero";
 @use "templates/apparel";
 @use "templates/quote";
 @use "templates/testimonials";
@@ -45,7 +46,8 @@ body {
   min-width: 320px;
   position: relative;
   color: var.$body_color;
-  background: var.$body_bg !important;
+  // background: var.$body_bg !important;
+  background: #f4f4f4 !important;
   font-display: swap;
   
 }
@@ -421,7 +423,7 @@ swiper-slide {
   padding-bottom: 10px;
 }
 swiper-container::part(pagination) {
-      margin-top: 20px;
+      margin-top: 35px;
       position: relative;
     }
 
@@ -472,6 +474,15 @@ swiper-container::part(bullet-active) {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Joane-Bold";
+  src: url("../assets/fonts/Joane-Bold.woff2") format("woff2"),
+  url("../assets/fonts/Joane-Bold.woff") format("woff");
+  // font-weight: 400;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
 
 h2 {
   @include mixin.Title-text;
@@ -479,6 +490,11 @@ h2 {
 
 p {
   @include mixin.Description-text;
+}
+
+.promo-video-dimensions {
+    width: -webkit-fill-available;
+    height: 450px;
 }
 
 // .calendly-spinner{

@@ -42,7 +42,7 @@ textarea {
 }
 
 .header {
-	position: sticky;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -59,8 +59,10 @@ textarea {
 	justify-content: center;
 	align-items: center;
 	gap: clamp(10px, 4vw, 80px);
-	background: #5a368b;
+	-webkit-backdrop-filter: blur(7px);
+	        backdrop-filter: blur(7px);
 	padding: 15px 0;
+	border-bottom: 1px solid #5a368b;
 }
 @media screen and (max-width: 1024px) {
 	.header_inner {
@@ -117,7 +119,10 @@ textarea {
 }
 
 .mobile-header {
-	background: #5a368b;
+	background: transparent;
+	border-bottom: 1px solid #5a368b;
+	-webkit-backdrop-filter: blur(8px);
+	        backdrop-filter: blur(8px);
 	position: relative;
 	z-index: 2;
 }
@@ -127,7 +132,6 @@ textarea {
 	justify-content: space-between;
 	align-items: center;
 	padding-block: 15px;
-	background: #5a368b;
 }
 
 .burger_menu .icon {
@@ -377,6 +381,228 @@ textarea {
 	justify-content: center;
 	width: 100%;
 	height: 100%;
+}
+
+.promo-hero .container {
+	width: 95vw;
+}
+.promo-hero .promo-hero-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 100%;
+	gap: 20px;
+}
+@media screen and (max-width: 768px) {
+	.promo-hero .promo-hero-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
+
+.left_column {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 25px;
+}
+.left_column .text_content {
+	font-family: "Joane-Bold", sans-serif;
+	width: 100%;
+	margin: 0 auto;
+	color: rgb(41, 48, 72);
+}
+.left_column .text_content span {
+	font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+.left_column .text_content h1 {
+	font-size: clamp(3rem, 5.5vw, 6rem);
+}
+.left_column .text_content p {
+	font-family: "Joane-Bold", sans-serif;
+	font-size: clamp(1.2rem, 2.5vw, 2rem);
+	color: rgb(41, 48, 72);
+}
+
+.media_content {
+	position: relative;
+	background: black;
+}
+.media_content .sound_on_btn {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: white;
+}
+.media_content .sound_on_hidden {
+	display: none;
+}
+.media_content .warning {
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	gap: 10px;
+}
+.media_content .warning svg {
+	background: red;
+	width: 50px;
+	height: 50px;
+	padding: 8px;
+	border-radius: 50%;
+}
+.media_content .warning .capitalize_text {
+	font-size: large;
+}
+.media_content .sound_on {
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	gap: 10px;
+}
+.media_content .sound_on svg {
+	background: green;
+	padding: 8px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.right_column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 30px;
+}
+@media screen and (max-width: 768px) {
+	.right_column {
+		width: 100%;
+	}
+}
+
+.bottom_content {
+	width: 100%;
+}
+
+.rate_wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 20px;
+}
+.rate_wrapper .rate_comment {
+	font-family: "Joane-Bold", sans-serif;
+	white-space: nowrap;
+	font-size: 22px;
+}
+
+.stars_content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+}
+.stars_content svg {
+	width: 20px;
+	height: 20px;
+}
+
+.hero_btn {
+	width: 100%;
+	background: #4b245e;
+	padding: 20px 40px;
+	white-space: nowrap;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	margin-top: 25px;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-color: #291334;
+	border-width: 7px;
+	gap: 5px;
+	color: white;
+}
+.hero_btn h2 {
+	color: white;
+	font-size: clamp(18px, 1.8vw, 32px);
+	font-weight: 500;
+}
+
+.promo_testimonials {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.promo_testimonials swiper-slide {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	background: #fff;
+	padding: 15px;
+	height: auto;
+	border-radius: 10px;
+	gap: 15px;
+}
+.promo_testimonials swiper-slide img {
+	width: clamp(50px, 10vw, 100px);
+	height: clamp(50px, 10vw, 100px);
+	border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+	.promo_testimonials swiper-slide img {
+		width: 100%;
+		height: auto;
+	}
+}
+.promo_testimonials swiper-slide .slide_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: -webkit-fill-available;
+	gap: 10px;
+}
+.promo_testimonials swiper-slide .slide_text p, .promo_testimonials swiper-slide .slide_text span {
+	font-family: "Joane-Bold", sans-serif;
+}
+.promo_testimonials swiper-slide .slide_text p {
+	font-size: 1.3rem;
+	font-weight: 200;
+	color: black;
+}
+.promo_testimonials swiper-slide .slide_text span {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+	.promo_testimonials swiper-slide {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
 }
 
 .apparel .link-element {
@@ -798,7 +1024,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	color: #000;
-	background: #ffffff !important;
+	background: #f4f4f4 !important;
 	font-display: swap;
 }
 
@@ -1144,7 +1370,7 @@ swiper-slide {
 }
 
 swiper-container::part(pagination) {
-	margin-top: 20px;
+	margin-top: 35px;
 	position: relative;
 }
 
@@ -1181,6 +1407,13 @@ swiper-container::part(bullet-active) {
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: "Joane-Bold";
+	src: url("../assets/fonts/Joane-Bold.woff2") format("woff2"), url("../assets/fonts/Joane-Bold.woff") format("woff");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
 h2 {
 	font-family: "SF-Pro", sans-serif;
 	font-size: clamp(32px, 2.4vw, 42px);
@@ -1195,4 +1428,9 @@ p {
 	line-height: 1.2;
 	font-weight: 400;
 	color: #480074;
+}
+
+.promo-video-dimensions {
+	width: -webkit-fill-available;
+	height: 450px;
 }

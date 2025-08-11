@@ -1,3 +1,5 @@
+
+
 $(window).on("load", function () {
   gsap.registerPlugin(ScrollTrigger);
 });
@@ -17,12 +19,33 @@ $(document).ready(function () {
       $(".mobile_menu")
         .css({
           top: headerHeight + "px",
-          height: `calc(105vh - ${headerHeight}px`,
+          height: `calc(105vh - ${headerHeight}px)`,
         })
         .fadeIn();
       $("body").css("overflow", "hidden");
     }
   });
+
+  let jsPlayer = videojs('promo-video', {
+    autoplay: true,
+    playsinline: true,
+    muted: true,
+  });
+
+  // $('.sound_on_btn').on('click', function () {
+  //   console.log('click');
+  //   $('.sound_on_btn').addClass('sound_on_hidden');
+  //   jsPlayer.muted(false);
+  //   jsPlayer.play();
+
+  // })
+  $('.sound_on_btn').on('click', function () {
+  jsPlayer.ready(function () {
+    $('.sound_on_btn').addClass('sound_on_hidden');
+    jsPlayer.muted(false);
+    jsPlayer.play();
+  });
+});
 
 const video = $(".video_container video").get(0);
   const playerButton = $(".player_button");
