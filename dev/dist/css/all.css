@@ -436,17 +436,25 @@ textarea {
 }
 .left_column .text_content span {
 	font-size: clamp(1.2rem, 1.8vw, 2rem);
-	font-family: "Roboto-SemiBold", sans-serif;
+	font-family: "Roboto-Regular", sans-serif;
 }
 .left_column .text_content h1 {
 	font-size: clamp(2.5rem, 4vw, 4.5rem);
 	font-family: "DMSerifDisplay-Regular", sans-serif;
 }
 .left_column .text_content p {
-	font-family: "Roboto-SemiBold", sans-serif;
+	font-family: "Roboto-Regular", sans-serif;
 	text-align: center;
 	font-size: clamp(1.2rem, 1.8vw, 2rem);
 	color: rgb(41, 48, 72);
+}
+.left_column .text_content .bold_text {
+	font-family: "Roboto-SemiBold", sans-serif;
+}
+@media screen and (max-width: 768px) {
+	.left_column .text_content {
+		height: auto;
+	}
 }
 
 .media_content {
@@ -619,7 +627,8 @@ textarea {
 @media screen and (max-width: 1024px) {
 	.promo_testimonials swiper-slide img {
 		width: 100%;
-		height: auto;
+		height: -webkit-fill-available;
+		padding-bottom: 15px;
 	}
 }
 .promo_testimonials swiper-slide .slide_text {
@@ -646,6 +655,16 @@ textarea {
 	.promo_testimonials swiper-slide {
 		flex-direction: column;
 		justify-content: flex-start;
+	}
+}
+@media screen and (max-width: 850px) {
+	.promo_testimonials swiper-slide {
+		flex-direction: row;
+	}
+}
+@media screen and (max-width: 600px) {
+	.promo_testimonials swiper-slide {
+		flex-direction: column;
 	}
 }
 
