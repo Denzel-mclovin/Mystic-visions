@@ -32,17 +32,12 @@ $(document).ready(function () {
     muted: true,
   });
 
-  // $('.sound_on_btn').on('click', function () {
-  //   console.log('click');
-  //   $('.sound_on_btn').addClass('sound_on_hidden');
-  //   jsPlayer.muted(false);
-  //   jsPlayer.play();
 
-  // })
   $('.sound_on_btn').on('click', function () {
   jsPlayer.ready(function () {
     $('.sound_on_btn').addClass('sound_on_hidden');
     jsPlayer.muted(false);
+    jsPlayer.currentTime(0);
     jsPlayer.play();
   });
 });

@@ -9,6 +9,8 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         width: 100%;
+        max-height: 100vh;
+        overflow: hidden;
         gap: 20px;
         @media screen and (max-width: 768px) {
             &{
@@ -37,17 +39,17 @@
         gap: 20px;
         color: rgb(41, 48, 72);
         span{
-            font-size: clamp(1.2rem, 2.5vw, 2rem);
+            font-size: clamp(1rem, 2vw, 1.5rem);
         }
         h1{
-            font-size: clamp(3rem, 5.5vw, 6rem);
+            font-size: clamp(2.5rem, 4.2vw, 4rem);
             // line-height: 110px;
         }
         p{
             // font-size: 2rem;
             font-family: 'Joane-Bold', sans-serif;
-
-            font-size: clamp(1.2rem, 2.5vw, 2rem);
+            text-align: center;
+            font-size: clamp(1rem, 2vw, 1.5rem);
             color: rgb(41, 48, 72);
 
         }
@@ -133,7 +135,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: 45px;
 
     gap: 30px;
