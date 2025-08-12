@@ -13,7 +13,7 @@
   width: 100%;
   height: fit-content;
   color: white;
-  background-color: red;
+  background-color: darkred;
   font-family: "SF-Pro", sans-serif;
   font-weight: 300;
   z-index: 7;
@@ -28,10 +28,17 @@
   // backdrop-filter: blur(7px);
   padding: 8px 0;
   // border-bottom: 1px solid #5a368b;
-  @media screen and (max-width: 1024px) {
-    & {
-      padding: 10px 0;
-    }
+  color: white;
+  font-family: 'Roboto-ExtraBold', sans-serif;
+  font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+  // @media screen and (max-width: 1024px) {
+  //   & {
+  //     padding: 10px 0;
+  //   }
+  // }
+  span{
+    padding-inline: 2vw;
+    text-align: center;
   }
   @media screen and (max-width: 768px) {
     & {
@@ -99,6 +106,8 @@
   align-items: center;
   padding-block: 10px;
   // background: #5a368b;
+  font-family: "Roboto-ExtraBold", sans-serif;
+  font-size: clamp(0.9rem, 4vw, 1.3rem);
   span{
     text-align: center;
   }
