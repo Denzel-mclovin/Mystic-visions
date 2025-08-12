@@ -61,7 +61,7 @@ textarea {
 	gap: clamp(10px, 4vw, 80px);
 	-webkit-backdrop-filter: blur(7px);
 	        backdrop-filter: blur(7px);
-	padding: 15px 0;
+	padding: 8px 0;
 	border-bottom: 1px solid #5a368b;
 }
 @media screen and (max-width: 1024px) {
@@ -104,7 +104,7 @@ textarea {
 }
 
 .logo {
-	width: clamp(35px, 10vw, 50px);
+	width: clamp(30px, 10vw, 30px);
 	height: auto;
 }
 
@@ -406,12 +406,14 @@ textarea {
 	align-items: stretch;
 	justify-content: space-between;
 	flex-direction: column;
+	text-align: center;
 	gap: 25px;
 }
 .left_column .text_content {
 	font-family: "Joane-Bold", sans-serif;
 	width: 100%;
 	margin: 0 auto;
+	gap: 20px;
 	color: rgb(41, 48, 72);
 }
 .left_column .text_content span {
@@ -509,6 +511,7 @@ textarea {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	margin-top: 45px;
 	gap: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -523,14 +526,14 @@ textarea {
 
 .rate_wrapper {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
 	gap: 20px;
 }
 .rate_wrapper .rate_comment {
-	font-family: "Joane-Bold", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	white-space: nowrap;
 	font-size: 22px;
 }
@@ -1183,7 +1186,7 @@ textarea.placeholder {
 	justify-content: center;
 	position: relative;
 	min-height: 100dvh;
-	padding: 50px 0;
+	padding: 35px 0;
 	overflow: hidden;
 }
 @media screen and (max-width: 768px) {

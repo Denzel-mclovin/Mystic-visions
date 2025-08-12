@@ -25,7 +25,7 @@
   gap: clamp(10px, 4vw, 80px);
   // background: #5a368b;
   backdrop-filter: blur(7px);
-  padding: 15px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #5a368b;
   @media screen and (max-width: 1024px) {
     & {
@@ -68,7 +68,7 @@
 }
 
 .logo {
-  width: clamp(35px, 10vw, 50px);
+  width: clamp(30px, 10vw, 30px);
   height: auto;
 }
 
