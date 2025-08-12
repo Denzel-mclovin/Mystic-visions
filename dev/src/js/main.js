@@ -31,6 +31,7 @@ $(document).ready(function () {
     playsinline: true,
     muted: true,
   });
+  
 
 
   $('.sound_on_btn').on('click', function () {
