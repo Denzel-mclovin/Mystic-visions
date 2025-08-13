@@ -435,7 +435,7 @@ textarea {
 	color: rgb(41, 48, 72);
 }
 .left_column .text_content span {
-	font-size: clamp(1.2rem, 1.8vw, 2rem);
+	font-size: clamp(1.2rem, 1.8vw, 2.5rem);
 	font-family: "Roboto-Regular", sans-serif;
 }
 .left_column .text_content h1 {
@@ -445,7 +445,7 @@ textarea {
 .left_column .text_content p {
 	font-family: "Roboto-Regular", sans-serif;
 	text-align: center;
-	font-size: clamp(1.2rem, 1.8vw, 2rem);
+	font-size: clamp(1.2rem, 1.8vw, 2.5rem);
 	color: rgb(41, 48, 72);
 }
 .left_column .text_content .bold_text {
@@ -1526,5 +1526,10 @@ p {
 
 .promo-video-dimensions {
 	width: -webkit-fill-available;
-	height: 450px;
+	height: 60vh;
+}
+@media screen and (max-width: 768px) {
+	.promo-video-dimensions {
+		height: 30vh;
+	}
 }

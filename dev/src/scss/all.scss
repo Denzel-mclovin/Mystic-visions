@@ -526,7 +526,11 @@ p {
 
 .promo-video-dimensions {
     width: -webkit-fill-available;
-    height: 450px;
+    height: 60vh;
+    @media screen and (max-width: 768px) {
+      height: 30vh;
+      
+    }
 }
 
 // .calendly-spinner{
