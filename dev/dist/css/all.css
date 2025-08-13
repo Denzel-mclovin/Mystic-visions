@@ -634,8 +634,8 @@ textarea {
 	flex: 1;
 }
 .promo_testimonials .testimonial-card img {
-	width: clamp(50px, 10vw, 100px);
-	height: clamp(50px, 10vw, 100px);
+	width: clamp(110px, 11vw, 220px);
+	height: clamp(110px, 11vw, 220px);
 	border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -656,6 +656,10 @@ textarea {
 .promo_testimonials .testimonial-card .slide_text p {
 	font-family: "Roboto-Regular", sans-serif;
 	text-align: center;
+	height: -webkit-fill-available;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 1.25rem;
 	font-weight: 400;
 	color: black;
