@@ -611,8 +611,18 @@ textarea {
 	width: 100%;
 	height: auto;
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	gap: 30px;
 }
-.promo_testimonials swiper-slide {
+@media screen and (max-width: 768px) {
+	.promo_testimonials {
+		flex-direction: column;
+		margin-top: 0;
+	}
+}
+.promo_testimonials .testimonial-card {
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
@@ -621,20 +631,21 @@ textarea {
 	height: auto;
 	border-radius: 10px;
 	gap: 15px;
+	flex: 1;
 }
-.promo_testimonials swiper-slide img {
+.promo_testimonials .testimonial-card img {
 	width: clamp(50px, 10vw, 100px);
 	height: clamp(50px, 10vw, 100px);
 	border-radius: 10px;
 }
-@media screen and (max-width: 1024px) {
-	.promo_testimonials swiper-slide img {
+@media screen and (max-width: 768px) {
+	.promo_testimonials .testimonial-card img {
 		width: 100%;
 		height: -webkit-fill-available;
 		padding-bottom: 15px;
 	}
 }
-.promo_testimonials swiper-slide .slide_text {
+.promo_testimonials .testimonial-card .slide_text {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -642,32 +653,23 @@ textarea {
 	height: 100%;
 	gap: 10px;
 }
-.promo_testimonials swiper-slide .slide_text p {
+.promo_testimonials .testimonial-card .slide_text p {
 	font-family: "Roboto-Regular", sans-serif;
 	text-align: center;
-	font-size: clamp(1rem, 1.8vw, 1rem);
+	font-size: 1.25rem;
 	font-weight: 400;
 	color: black;
 }
-.promo_testimonials swiper-slide .slide_text span {
+.promo_testimonials .testimonial-card .slide_text span {
 	font-family: "DMSerifDisplay-Regular", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 700;
+	text-align: center;
 }
-@media screen and (max-width: 1024px) {
-	.promo_testimonials swiper-slide {
+@media screen and (max-width: 768px) {
+	.promo_testimonials .testimonial-card {
 		flex-direction: column;
 		justify-content: flex-start;
-	}
-}
-@media screen and (max-width: 850px) {
-	.promo_testimonials swiper-slide {
-		flex-direction: row;
-	}
-}
-@media screen and (max-width: 600px) {
-	.promo_testimonials swiper-slide {
-		flex-direction: column;
 	}
 }
 
