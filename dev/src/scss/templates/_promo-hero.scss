@@ -43,7 +43,7 @@
         height: -webkit-fill-available;
         width: 100%;
         margin: 0 auto;
-        gap: 15px;
+        gap: 10px;
         color: rgb(41, 48, 72);
         span{
             font-size: clamp(1.2rem, 1.8vw, 2rem);
@@ -174,13 +174,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     gap: 20px;
     .rate_comment{
-        font-family: 'Roboto-SemiBold', sans-serif;
+        font-family: 'Roboto-Regular', sans-serif;
         white-space: nowrap;
-        font-size: 22px;
+        font-size: auto;
+        .bold_text{
+        font-family: 'Roboto-SemiBold', sans-serif;
+
+        }
     }
 }
 .stars_content{

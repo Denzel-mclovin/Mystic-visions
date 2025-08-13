@@ -13,7 +13,7 @@
   width: 100%;
   height: fit-content;
   color: white;
-  background-color: darkred;
+  background-color: #e40000;
   font-family: "SF-Pro", sans-serif;
   font-weight: 300;
   z-index:15;
@@ -94,7 +94,7 @@
 .mobile-header {
   // background: #5a368b;
   background: transparent;
-  border-bottom: 1px solid #5a368b;
+  // border-bottom: 1px solid #5a368b;
   backdrop-filter: blur(8px);
   position: relative;
   z-index: 2;

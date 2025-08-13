@@ -49,7 +49,7 @@ textarea {
 	height: -moz-fit-content;
 	height: fit-content;
 	color: white;
-	background-color: darkred;
+	background-color: #e40000;
 	font-family: "SF-Pro", sans-serif;
 	font-weight: 300;
 	z-index: 15;
@@ -120,7 +120,6 @@ textarea {
 
 .mobile-header {
 	background: transparent;
-	border-bottom: 1px solid #5a368b;
 	-webkit-backdrop-filter: blur(8px);
 	        backdrop-filter: blur(8px);
 	position: relative;
@@ -431,7 +430,7 @@ textarea {
 	height: -webkit-fill-available;
 	width: 100%;
 	margin: 0 auto;
-	gap: 15px;
+	gap: 10px;
 	color: rgb(41, 48, 72);
 }
 .left_column .text_content span {
@@ -558,14 +557,17 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	width: 100%;
 	gap: 20px;
 }
 .rate_wrapper .rate_comment {
-	font-family: "Roboto-SemiBold", sans-serif;
+	font-family: "Roboto-Regular", sans-serif;
 	white-space: nowrap;
-	font-size: 22px;
+	font-size: auto;
+}
+.rate_wrapper .rate_comment .bold_text {
+	font-family: "Roboto-SemiBold", sans-serif;
 }
 
 .stars_content {
