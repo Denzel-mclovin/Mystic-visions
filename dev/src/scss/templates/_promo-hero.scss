@@ -280,6 +280,11 @@
                 font-size: 1.25rem;
                 font-weight: 400;
                 color: black;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    height: auto;
+                    
+                }
             }
             span{
                 font-family: 'DMSerifDisplay-Regular', sans-serif;

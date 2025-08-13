@@ -664,6 +664,12 @@ textarea {
 	font-weight: 400;
 	color: black;
 }
+@media screen and (max-width: 768px) {
+	.promo_testimonials .testimonial-card .slide_text p {
+		display: block;
+		height: auto;
+	}
+}
 .promo_testimonials .testimonial-card .slide_text span {
 	font-family: "DMSerifDisplay-Regular", sans-serif;
 	font-size: 1.6rem;
